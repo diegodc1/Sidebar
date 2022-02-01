@@ -18,10 +18,15 @@
     />
   </head>
   <body>
-    <aside>
+    <aside class="">
       <div class="header-sidebar">
-        <img src="/assets/images/logo.svg" alt="Logo da +Vet" />
-        <img src="/assets/images/menu.svg" alt="" />
+        <img src="/assets/images/logo.svg" alt="Logo da +Vet" id="logo" />
+        <img
+          onclick="sidebar()"
+          src="/assets/images/menu.svg"
+          alt="Icone menu"
+          id="menu"
+        />
       </div>
 
       <div class="menu-sections">
@@ -55,25 +60,26 @@
           <span>Ajustes</span>
         </div>
       </div>
-    </aside>
 
-    <div class="footer-sidebar">
-      <div class="info-user">
-        <img
-          src="/assets/images/photo-user.jpg"
-          alt="Foto do usuário"
-          width="100px"
-        />
-        <div class="text-info">
-          <span>Eleanar Pena</span>
-          <p>Veterianária</p>
+      <div class="footer-sidebar">
+        <div class="info-user">
+          <img
+            src="/assets/images/photo-user.jpg"
+            alt="Foto do usuário"
+            width="100px"
+            id="user-photo"
+          />
+          <div class="text-info">
+            <span id="user-name">Eleanar Pena</span>
+            <p id="user-office">Veterianária</p>
+          </div>
+        </div>
+
+        <div class="log-out" id="log-out">
+          <img src="/assets/images/log-out.svg" alt="" />
         </div>
       </div>
-
-      <div class="log-out">
-        <img src="/assets/images/log-out.svg" alt="" />
-      </div>
-    </div>
+    </aside>
 
     <main>
       <h1>Dashboard</h1>

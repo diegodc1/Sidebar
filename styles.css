@@ -34,6 +34,7 @@ main h1 {
   font-weight: 500;
 }
 
+/*=============== Sidebar Open ====================*/
 aside {
   background: var(--green);
   width: 18%;
@@ -50,15 +51,17 @@ aside {
   margin-bottom: 2.6rem;
 }
 
+#menu:hover {
+  transform: rotate(90deg);
+  transition: all 0.4s;
+}
+
 /**** Sidebar Sections ****/
 .menu-sections {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
-
-.sections.search {
-  background: var(--light-green);
+  width: 100%;
 }
 
 .sections {
@@ -71,6 +74,13 @@ aside {
   border-radius: 10px;
 
   font-size: 1.5rem;
+  transition: all 0.9s;
+}
+
+.sections:hover {
+  background: var(--light-green);
+  cursor: pointer;
+  letter-spacing: 0.1em;
 }
 
 /**** Sidebar Footer *****/
@@ -78,6 +88,9 @@ aside {
   display: flex;
   position: absolute;
   bottom: 0;
+
+  width: 100%;
+  left: 0;
 
   background: var(--light-green);
   width: 18%;
@@ -113,4 +126,53 @@ aside {
 .text-info {
   display: flex;
   flex-direction: column;
+}
+
+/*=============== Sidebar Closed ====================*/
+
+.close {
+  padding: 1rem;
+  padding-top: 2.5rem;
+  width: 6%;
+  justify-content: center;
+  align-items: center;
+}
+
+.close .header-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close #logo {
+  display: none;
+}
+
+.close span {
+  display: none;
+}
+
+.close #user-photo {
+  display: none;
+}
+
+.close #user-office {
+  display: none;
+}
+
+.close .sections {
+  justify-content: center;
+}
+
+.close.footer-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  width: 6%;
+}
+
+.close.footer-sidebar #log-out {
+  margin-right: 1rem;
 }
