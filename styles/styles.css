@@ -40,6 +40,8 @@ aside {
   width: 18%;
   height: 100vh;
   padding: 2rem;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s; /*adiciona a transição de fechar na sidebar*/
 }
 
 /**** Sidebar Header ****/
@@ -91,6 +93,14 @@ a:visited {
   text-decoration: none;
 }
 
+#dashboard,
+#vets,
+#settings,
+#clients,
+#pets {
+  background: var(--light-green);
+}
+
 /**** Sidebar Footer *****/
 .footer-sidebar {
   display: flex;
@@ -108,6 +118,9 @@ a:visited {
 
   justify-content: space-between;
   align-items: center;
+
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
 }
 
 .info-user {
@@ -179,6 +192,9 @@ a:visited {
 
   position: absolute;
   width: 6%;
+
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
 }
 
 .close.footer-sidebar #log-out {
